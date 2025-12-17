@@ -1,8 +1,12 @@
 {
-  "name": "real-state",
+  "name": "real-estate",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/server.js",
+  "type": "module",
   "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -10,7 +14,7 @@
     "url": "git+https://github.com/GabrielSantos99/node-real-state.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Gabriel Santos Silva",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/GabrielSantos99/node-real-state/issues"
@@ -18,6 +22,12 @@
   "homepage": "https://github.com/GabrielSantos99/node-real-state#readme",
   "description": "",
   "devDependencies": {
+    "@types/express": "^5.0.6",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1"
   }
 }
